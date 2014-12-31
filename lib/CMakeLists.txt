@@ -51,6 +51,12 @@ target_link_libraries(gnuradio-gsm ${Boost_LIBRARIES} ${GNURADIO_RUNTIME_LIBRARI
 )
 set_target_properties(gnuradio-gsm PROPERTIES DEFINE_SYMBOL "gnuradio_gsm_EXPORTS")
 
+if(APPLE)
+    set_target_properties(gnuradio-gsm PROPERTIES
+        INSTALL_NAME_DIR "${CMAKE_INSTALL_PREFIX}/lib"
+    )
+endif(APPLE)
+
 ########################################################################
 # Install built library files
 ########################################################################
