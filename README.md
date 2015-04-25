@@ -51,6 +51,8 @@ At the end create the `~/.gnuradio/config.conf` config file so gnuradio-companio
 local_blocks_path=/usr/local/share/gnuradio/grc/blocks
 ```
 
+Build on OS X
+=============
 ```sh
 mkdir build
 cd build
