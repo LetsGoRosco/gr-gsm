@@ -51,6 +51,11 @@ At the end create the `~/.gnuradio/config.conf` config file so gnuradio-companio
 local_blocks_path=/usr/local/share/gnuradio/grc/blocks
 ```
 
+$ mkdir build
+$ cd build
+$ CC=/usr/bin/llvm-gcc CXX=/usr/bin/llvm-g++ cmake -DPYTHON_EXECUTABLE=/opt/local/bin/python2.7 -DPYTHON_INCLUDE_DIR=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/Headers -DPYTHON_LIBRARY=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/Python ..
+$ make
+
 Usage
 =====
 There are many possible applications of *gr-gsm*. At this moment there is one application that is ready out of the box. It is improved replacement of the old *Airprobe* - the program that lets you receive and decode GSM control messages from *timeslot 0* on the broadcasting channel of a BTS. After installation of *gr-gsm* there are two python executables that will be installed:
