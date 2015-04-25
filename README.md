@@ -51,10 +51,12 @@ At the end create the `~/.gnuradio/config.conf` config file so gnuradio-companio
 local_blocks_path=/usr/local/share/gnuradio/grc/blocks
 ```
 
-$ mkdir build
-$ cd build
-$ CC=/usr/bin/llvm-gcc CXX=/usr/bin/llvm-g++ cmake -DPYTHON_EXECUTABLE=/opt/local/bin/python2.7 -DPYTHON_INCLUDE_DIR=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/Headers -DPYTHON_LIBRARY=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/Python ..
-$ make
+```sh
+mkdir build
+cd build
+CC=/usr/bin/llvm-gcc CXX=/usr/bin/llvm-g++ cmake -DPYTHON_EXECUTABLE=/opt/local/bin/python2.7 -DPYTHON_INCLUDE_DIR=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/Headers -DPYTHON_LIBRARY=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/Python ..
+make
+```
 
 Usage
 =====
